@@ -1,0 +1,78 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+@mixin flex-direction {
+  flex-direction: column;
+}
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+  .nav-link {
+    font-family: "Play", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+}
+.navbar-brand {
+  font-family: cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.9rem;
+  color: #fff;
+}
+.bg {
+  width: 100%;
+  height: 87.6vh;
+  @include flex-direction();
+}
+.section {
+  height: 250px;
+  width: 350px;
+  border-radius: 15px;
+}
+.operacoes {
+  @include flex-direction();
+}
+.textos {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+input {
+  padding: 5px 15px;
+  color: #fff;
+}
+button {
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+/* RODAPÉ */
+.footer {
+  @include flex-direction();
+  padding: 10px;
+  .links {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Indie Flower", cursive;
+    font-size: 1.3rem;
+    a:hover {
+      color: #0d6efd;
+    }
+  }
+  .bi {
+    font-size: 1.8rem;
+    &-github {
+      color: #fff;
+    }
+    &-linkedin {
+      color: #fff;
+    }
+    &:hover {
+      color: #0d6efd;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Indie+Flower&family=Play&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets/imagens/Wwalczyszyn-Android-Style-Honeycomb-Calculator.ico"
+        type="image/x-icon">
+    <link rel="stylesheet" href="assets/estilos/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/estilos/css/style.css">
+</head>
+
+<body>
+    <header class="container-fluid bg-dark bg-gradient">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand title me-2" href="#">Calculadora</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="https://ingridssilveira.github.io/IngridSouza/"
+                            target="_blank">Desenvolvedora</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-dark bg d-flex align-items-center justify-content-center">
+        <section class="bg-primary section p-3 d-flex align-items-center justify-content-center">
+
+            <div class="d-flex align-items-center justify-content-center operacoes">
+                <span class="textos mb-1">Digite os valores: </span>
+                <div class="d-flex valor align-items-center justify-content-center mb-2">
+                        <input type="text" id="valor1" value="0" name="0" class="border border-1 border-dark w-50 me-3 rounded rounded-1 bg-dark">
+                        <input type="text" id="valor2" value="0" name="0" class="border border-1 border-dark w-50 me-3 rounded rounded-1 bg-dark">
+                </div>
+                <div class="resultado">
+                    <label for="res" class="textos mb-1">Resultado: </label>
+                    <input type="text" id="res" value="0" name="res" readonly style="cursor: not-allowed;"
+                        class="border border-1 border-dark rounded rounded-1 bg-dark w-100">
+                </div>
+            </div>
+            <div class="operacoes d-flex ms-2">
+                <button id="btn_soma" class="btn btn-danger">+</button>
+                <button id="btn_subtracao" class="btn btn-success">-</button>
+                <button id="btn_multiplicacao" class="btn btn-light">*</button>
+                <button id="btn_divisao" class="btn btn-warning">/</button>
+            </div>
+        </section>
+        <footer id="rodape" class="footer container-fluid d-flex align-items-center justify-content-center">
+            <div class="footer_copy">
+                <p class="mb-0 links">Desenvolvido por <a class="links" target="_blank"
+                        href="https://github.com/IngridsSilveira">Ingrid de Souza</a>
+                </p>
+            </div>
+            <div class="footer_area">
+                <a class="me-2" target="_blank" href="https://github.com/IngridsSilveira"><i
+                        class="bi bi-github"></i></a>
+
+                <a target="_blank" href="https://www.linkedin.com/in/ingridssilveira/"><i
+                        class="bi bi-linkedin"></i></a>
+            </div>
+        </footer>
+    </main>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/calculadora.js"></script>
+</body>
+
+</html>

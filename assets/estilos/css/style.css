@@ -1,0 +1,87 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar-expand-lg .navbar-collapse .nav-link {
+  font-family: "Play", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  font-family: cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.9rem;
+  color: #fff;
+}
+
+.bg {
+  width: 100%;
+  height: 87.6vh;
+  flex-direction: column;
+}
+
+.section {
+  height: 250px;
+  width: 350px;
+  border-radius: 15px;
+}
+
+.operacoes {
+  flex-direction: column;
+}
+
+.textos {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input {
+  padding: 5px 15px;
+  color: #fff;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* RODAPÉ */
+.footer {
+  flex-direction: column;
+  padding: 10px;
+}
+.footer .links {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.3rem;
+}
+.footer .links a:hover {
+  color: #0d6efd;
+}
+.footer .bi {
+  font-size: 1.8rem;
+}
+.footer .bi-github {
+  color: #fff;
+}
+.footer .bi-linkedin {
+  color: #fff;
+}
+.footer .bi:hover {
+  color: #0d6efd;
+}
+
+/*# sourceMappingURL=style.css.map */
